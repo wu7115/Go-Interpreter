@@ -3,8 +3,8 @@ package token
 type TokenType string
 
 type Token struct {
-	Type    TokenType
-	Literal string
+	Type    TokenType // e.g., LET, ASSIGN, IDENT, etc.
+	Literal string    // e.g., "let", "x", "=", "5", ";", etc.
 }
 
 const (
@@ -15,12 +15,12 @@ const (
 	INT   = "INT"
 
 	// Operators
-	ASSIGN  = "="
-	PLUS    = "+"
-	MINUS   = "-"
-	BANG    = "!"
-	ASTERIK = "*"
-	SLASH   = "/"
+	ASSIGN   = "="
+	PLUS     = "+"
+	MINUS    = "-"
+	BANG     = "!"
+	ASTERISK = "*"
+	SLASH    = "/"
 
 	LT = "<"
 	GT = ">"
